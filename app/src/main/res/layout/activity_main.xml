@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/pp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Customer"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Promo" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPromo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtSearchPromo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Cari Diskon" />
+
+            <Button
+                android:id="@+id/btnCariPromo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Cari"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Riwayat Transaksi" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRiwayatTransaksiCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Daftar Mobil" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBrosur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnCekRatingDriver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:backgroundTint="@color/black"
+            android:text="Cek Perfoma Driver"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/txtLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:text="Logout"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
